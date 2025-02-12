@@ -1,0 +1,6 @@
+def number_to_string(num):
+
+    return str(num)
+number = 123, 999, -100
+result = number_to_string(number)
+print(result)
