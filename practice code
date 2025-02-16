@@ -1,7 +1,10 @@
-for num in range(31):
-    if (num % 3 == 0):
-        continue
-    if (num >25):
-        break
-    else:
-        print(num)
+list_of_numbers = [3, 99, 12, 1, 7]
+
+def square_nums(nums_list):
+    result_list = []
+    for num in nums_list:
+        squared_num = num ** 2
+        result_list.append(squared_num)
+    return result_list
+
+print(square_nums(list_of_numbers))
