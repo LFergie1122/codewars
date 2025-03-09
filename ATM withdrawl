@@ -1,0 +1,15 @@
+account_balance = 1500
+
+try:
+    withdraw_amount = int(input('How much would you like to withdraw?'))
+    
+    if withdraw_amount > account_balance:
+        print('Insufficient funds!')
+    else:
+        account_balance -= withdraw_amount
+        
+except ValueError:
+    print('Must put in a valid number!')
+
+finally:
+    print(f'Your remaining balance is ${account_balance}')
